@@ -1,0 +1,144 @@
+:root{
+    --blue:#5daae9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+/*nav section*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #e4eaec;
+    padding: 0.1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    font-style: italic;
+    color:#031249;
+    font-weight: bold;
+    font-family: lapis;
+    text-decoration: none;
+}
+header .navbar a{
+    font-size: 2rem;
+    font-family: cornflower;
+padding: 0 1.5rem;
+color: #1b1a1a;
+text-decoration: none;
+}
+header .navbar a:hover{
+    color: var(--blue);
+}
+header .icons a{
+    font-size: 2rem;
+    color: #031249;
+    margin-left: 0.1rem;
+    padding: 0 1.5rem;
+}
+header .icons a:hover{
+    color: #a1215d;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+/*end of nav section*/
+
+/*company info section*/
+section{
+    padding: 2rem 6%;
+}
+.company h3{
+    font-size: 30px;
+    color: black;
+    margin-left: 30%;
+}
+#companyinfo{
+    padding: 0;
+}
+.company{
+    width: 100%;
+    margin-top: 80px;
+    box-shadow: 0  3px 0 0 rgba(0,0,0.6);
+
+}
+.company .info{
+    font-size: 17px;
+    color: black;
+    padding: 20px;
+}
+.funds{
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    padding: 20px;
+}
+/*company info section*/
+
+
+/*footer section*/
+.footer{
+    background-color: #889599;
+    margin: 0;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 30px;
+
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+color: #031249;
+font-size: 20px;
+padding: 2px 0;
+margin-top: 3px;
+}
+.footer .box-container .box a{
+    display: block;
+    color: black;
+    font-size: 13px;
+    padding: 0.5rem 0;
+    text-decoration: none;
+
+}
+.footer .box-container .box a:hover{
+color: var(--blue);
+text-decoration: underline;
+}
+/*end of footer section*/
+

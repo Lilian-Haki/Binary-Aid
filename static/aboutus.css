@@ -1,0 +1,175 @@
+*{
+   padding: 0;
+   margin: 0;
+    transition: 2s linear;
+    text-decoration: none;
+outline: none;
+    }
+body{
+    background-image: url(/images/wallhaven-y8358x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    }
+/*nav section*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #e4eaec;
+    padding: 0.1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    font-style: italic;
+    color:#031249;
+    font-weight: bold;
+    font-family: lapis;
+    text-decoration: none;
+    
+}
+header .navbar a{
+    font-size: 2rem;
+    font-family: cornflower;
+padding: 0 1.5rem;
+color: #1b1a1a;
+text-decoration: none;
+}
+header .navbar a:hover{
+    color: var(--blue);
+}
+header .icons a{
+    font-size: 2rem;
+    color: #031249;
+    margin-left: 0.1rem;
+    padding: 0 1.5rem;
+}
+header .icons a:hover{
+    color: #a1215d;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+/*end nav*/
+/*about*/
+.about-1{
+    margin: 65px;
+    padding: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: #110f0f;
+    font-size: 15px;
+}
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 80px,30px;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: none;
+}
+.about-item p{
+    margin-top: 5px;
+    font-size: 13px;
+    padding: 10px;
+}
+.about-item:hover{
+    background-color: #5fbff9;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+/*end of about*/
+
+/*footer section*/
+.footer{
+    background-color: #889599;
+    margin: 0;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 30px;
+
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+color: #031249;
+font-size: 20px;
+padding: 2px 0;
+margin-top: 3px;
+}
+.footer .box-container .box a{
+    display: block;
+    color: black;
+    font-size: 13px;
+    padding: 0.5rem 0;
+    text-decoration: none;
+
+}
+.footer .box-container .box a:hover{
+color: var(--blue);
+text-decoration: underline;
+}
+/*end of footer section*/
