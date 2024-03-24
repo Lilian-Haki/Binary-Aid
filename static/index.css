@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 :root{
     --blue:#5daae9;
 }
@@ -20,9 +21,10 @@ html{
 }
 /*nav section*/
 header{
+    height: 80px;
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: #e4eaec;
+    background: #060606;
     padding: 0.1rem 9%;
     display: flex;
     align-items: center;
@@ -33,7 +35,7 @@ header{
 header .logo{
     font-size: 3rem;
     font-style: italic;
-    color:#031249;
+    color:#1843e0;
     font-weight: bold;
     font-family: lapis;
     text-decoration: none;
@@ -42,7 +44,7 @@ header .navbar a{
     font-size: 2rem;
     font-family: cornflower;
 padding: 0 1.5rem;
-color: #1b1a1a;
+color: antiquewhite;
 text-decoration: none;
 }
 header .navbar a:hover{
@@ -50,7 +52,7 @@ header .navbar a:hover{
 }
 header .icons a{
     font-size: 2rem;
-    color: #031249;
+    color:#1843e0;
     margin-left: 0.1rem;
     padding: 0 1.5rem;
 }
@@ -71,22 +73,35 @@ header .fa-bars{
 }
 /*end of nav section*/
 /*home section*/
-section{
-    padding: 2rem 9%;
+section {
+    padding: 2px 7%;
 }
 .home{
-    display: flex;
-    align-items: center;
+    text-align: center;
     min-height: 100vh;
-    background: url(/images/wallhaven-y8358x.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-.home .content{
-    max-width: 50rem;
+.home .content .background img{
+    height: 650px;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    filter: blur(5px) brightness(40%);
+}
+.home .content .text{
+    text-align: center;
+    margin-left: 280px;
+    margin-top: -480px;
+    position: absolute;
+    font-family: "Almendra SC", serif;
+    font-weight: bold;
+    color: #030116;
+    padding: 1rem;
 }
 .home .content h3{
+    font-family: "Almendra SC", serif;
     font-size: 6rem;
+    font-weight: 700;
+    font-style: italic;
     color: #030116;
 }
 .home .content span{
@@ -101,24 +116,39 @@ section{
     padding: 1rem 0;
     line-height: 1.5;
 }
+.pricing-plan__button:hover{
+    background: #031249;
+    color: #ffffff;
+}
 .btn{
+    letter-spacing: 0.02em;
+    font-weight: bold;
     display: inline-block;
     margin-top: 1rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
     background: #03335a;
-    color: #fff;
-    padding: 1.5rem 2rem;
+    padding: 0.5rem 5rem;
     cursor: pointer;
     font-size: 1.7rem;
+    background: #031249;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #031249;
 }
 .btn:hover{
-    background: var(--blue);
+    color: #031249;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #031249;
 }
 /*end of home section*/
 /*about section*/
+
 .heading{
+    font-family: "Almendra SC", serif;
     text-align: center;
     font-size: 4rem;
+    font-weight: bold;
     color: #030116;
     padding: 1rem;
     margin: 2rem 0;
@@ -126,6 +156,7 @@ section{
 }
 .heading span{
     color: #031249;
+    font-family: "Almendra SC", serif;
 }
 .about .row{
     display: flex;
@@ -138,6 +169,7 @@ section{
 .about .row .video-container{
     flex:1 1 40rem;
     position: relative;
+    filter: blur(2px);
 }
 .about .row .video-container video{
     width: 100%;
@@ -180,8 +212,12 @@ mix-blend-mode: screen;
     justify-content: center;
     padding: 0px;
 }
+.pricing-plan:hover{
+    transition: all .6s ease-out;
+    transform: scale(1.1);
+}
 .pricing-plan{
-    width: 300px;
+    width: 270px;
     border-radius: 25px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -290,7 +326,7 @@ mix-blend-mode: screen;
     box-shadow: 0 0 9px rgba(0,0,0.6);
 }
 .about-item i{
-    font-size: 43px;
+    font-size: 30px;
     margin: 0;
 }
 .about-item h3{
@@ -337,7 +373,7 @@ mix-blend-mode: screen;
     flex-wrap: wrap-reverse;
     align-items: center;
     background-color: rgb(202, 200, 230);
-    background-image: url(/images/10\ best\ reasons\ to\ go\ snorkeling.png);
+    background-image: url(/images/contactbg.jpg);
 }
 .contact .row form{
     flex: 1 1 40rem;
@@ -374,12 +410,13 @@ mix-blend-mode: screen;
 
 /*footer section*/
 .footer{
-    background-color: #889599;
+    background-color: #000;
     margin: 0;
     box-shadow: 0 0 9px rgba(0,0,0.6);
     margin-top: 30px;
     position: absolute;
     width: 100%;
+    font-style: italic;
 }
 .footer .box-container{
     display: flex;
@@ -392,14 +429,14 @@ mix-blend-mode: screen;
     flex: 1 1 25rem;
 }
 .footer .box-container .box h3{
-color: #031249;
+color: #031969;
 font-size: 20px;
 padding: 2px 0;
 margin-top: 3px;
 }
 .footer .box-container .box a{
     display: block;
-    color: black;
+    color: #7f7d7d;
     font-size: 13px;
     padding: 0.5rem 0;
     text-decoration: none;
